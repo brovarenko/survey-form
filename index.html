@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Website Survey</h1>
+        <p id="description">Please fill in the website information</p>
+    </header>
+    <form id="survey-form">
+        <div class="group-input">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" name="email"  placeholder="Enter your Email" required/>
+        <label id="number-label" for="number">Age</label>
+        <input type="number" id="number" name="age" min="6" max="100" placeholder="Age"/>
+         </div>
+        <p>What browser do you use?</p>
+        <select id="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="Google Chrome">Google Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="IE">IE</option>
+            <option value="Opera">Opera</option>
+            <option value="Other">Other</option>
+        </select>
+        <p>Which device did you use to access the website?</p>
+        <label>
+            <input  name="device" type="radio" value="Desktop"/>
+            Desktop
+        </label>
+        <label>
+            <input  name="device" type="radio" value="Pad devices"/>
+            Pad devices
+        </label>
+        <label>
+            <input  name="device" type="radio" value="Mobil devices"/>
+            Mobil devices
+        </label>
+        <p>Are you satisfied that you found out the website?</p>
+        <select id="satisfied">
+            <option disabled selected value>Select an option</option>
+            <option value="Very Satisfied">Very Satisfied</option>
+            <option value="Satisfied">Satisfied</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Unsatisfied">Unsatisfied</option>
+            <option value="Very Unsatisfied">Very Unsatisfied</option>
+        </select>
+        <p>How did you hear about this website?</p>
+        <label>
+            <input  name="website" type="checkbox" value="Social Media"/>
+            Social Media
+        </label>
+        <label>
+            <input  name="website" type="checkbox" value="Advertising"/>
+            Advertising
+        </label>
+        <label>
+            <input  name="website" type="checkbox" value="Search Engine"/>
+            Search Engine
+        </label>
+        <label>
+            <input  name="website" type="checkbox" value="Friend"/>
+            Friend
+        </label>
+        <p>How can we improve website?</p>
+        <textarea id="comments" name="comment" placeholder="Enter your comment here...">
+        </textarea>
+        <button type="submit" id="submit">Submit</button>
+    </form>      
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
